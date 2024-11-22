@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="playerjs.js"></script>
+</head>
+<body>
+
+    <main class="mx-auto md:max-w-7xl">
+
+        <h1 class="text-lg text-green-500 text-center font-bold my-8">Web Player</h1>
+
+        <div class="flex flex-col my-2">
+            <label for="">Lista M3u8</label>
+            <div class="flex gap-4">
+                <input type="text" class="flex-1 border border-black">
+                <button id="btn-carregar" class="border border-black px-8">Carregar</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mb-10">
+
+            <div class="flex flex-col my-2">
+                <label for="">Canais</label>
+                <select id="select-canais" class="border border-black"></select>
+            </div>
+
+            <div class="flex flex-col my-2">
+                <label for="">Filmes</label>
+                <select id="select-filmes" class="border border-black"></select>
+            </div>
+
+            <div class="flex flex-col my-2">
+                <label for="">Séries</label>
+                <select id="select-series" class="border border-black"></select>
+            </div>
+
+        </div>
+
+        
+        <div class="border-2 border-black">
+            <div class="aspect-video w-full" id="player"></div>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
